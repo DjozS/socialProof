@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('images/bg-pattern-top-desktop.svg'),
+    url('images/bg-pattern-bottom-desktop.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+.container1{
+    display:flex;
+    margin-bottom:50px;
+}
+.container2{
+    display:flex;
+}
+.home{
+    color:hsl(300, 43%, 22%);
+    width:400px;
+    position: relative;
+    right:8%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reviewDiv{
+    display:flex;
+    flex-direction: column;
+}
+.stars1, .stars2, .stars3{
+    display: flex;
+    align-items: center;
+    color:hsl(300, 43%, 22%);
+    width:400px;
+    height:45px;
+    background:hsl(300, 24%, 96%);
+    margin-top:20px;
+    border-radius:10px;
+}
+h1{
+    font-size:40px;
+    font-weight: 700;
+    width:280px;
+    margin-bottom:20px;
+}
+h2{
+    font-size:16px;
+}
+p{
+    font-size:15px;
+    color:hsl(303, 10%, 53%);
+    width:380px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.colton, .irene, .anne{
+    display:flex;
+    flex-direction: column;
+    background:hsl(300, 43%, 22%);
+    width:300px;
+    height:190px;
+    border-radius: 10px;
+    margin:10px;
+    padding:25px;
+}
+.header{
+    display:flex;
+    align-items: center;
+}
+.name{
+    display:flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+#avatar{
+    width:40px;
+    border-radius:50%;
+    margin-right:30px;
+}
+.txtBuyer{
+    width:250px;
+    margin-top:15px;
+    color:white;
+    opacity:0.9;
+    line-height:1.2;
+}
+.buyName{
+    color:white;
+}
+.verif{
+    color:hsl(333, 80%, 67%);
+    font-weight:400;
+    opacity:0.8;
+}
+.starsDiv{
+    margin-left:30px;
+    margin-right:30px;
+}
+.irene{
+    margin-top:30px;
+}
+.anne{
+    margin-top:50px;
+}
+.stars1{
+    position: relative;
+    left: -16%;
+}
+.stars2{
+    position: relative;
+    left:-5%
+}
+.stars3{
+    position: relative;
+    left:5%;
+}
+@media(max-width:1000px){
+    body{
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right bottom;
+        min-height:100vh;
+        text-align: center;
+    }
+    .container1, .container2{
+        display:flex;
+        flex-direction: column;
+        margin-bottom:20px;
+    }
+  
+    .home{
+        position: relative;
+        left:2%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:20px;
+    }
+    p{
+        width:300px;
+    }
+    .stars1, .stars2, .stars3{
+        position: relative;
+        left:12%;
+        align-items: center;
+        justify-content: space-evenly;
+        width:300px;
+        display:flex;
+        flex-direction: column;
+        height:70px;
+    }
+    .colton, .irene, .anne{
+     margin:6px;
+    }
+}
